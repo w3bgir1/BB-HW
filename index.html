@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mocha Tests</title>
+    <title>SuperHeroGame</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
@@ -10,21 +10,50 @@
 
 
   <!-- YOUR HTML HERE -->
+  <div id="box">
   <div class="media">
       <div class="image">
         <img src="./img/hero.png" id="heroImg" alt="meow"></div>
       <div class="text">
-          <div id="stats"></div>
+          <div id="statsHero"></div>
       <div id="heroImages">
-          <img src="./img/box.jpg" id="inn" alt="">
-          <img src="./img/weapon.jpg" id="dagger" alt="">
-          <img src="./img/chest.jpg" id="bag" alt="">
+          <img src="./img/box.jpg" id="inn" alt="Get some rest">
+          <img src="./img/weapon.jpg" id="dagger" alt="Pick up dagger!">
+          <img src="./img/chest.jpg" id="bag" alt="Switch weapon">
       </div>
+      <div>
+        <button onclick="changeName(hero, 'Meow', statsHero)">Change name</button>
+        <button onclick="attack(hero, enemy)">Attack!</button></div>
+      
       </div>
   </div>
+
+  <div class="media flipped" id="enemyBox">
+      <div class="image">
+        <img src="./img/enemy.jpg" id="enemyImg" alt="Furfurfur"></div>
+      <div class="text">
+          <div id="statsEnemy"></div>
+      <div id="enemyImages">
+          <img src="./img/enemyhouse.jpg" id="enemyHouse" alt="Have some rest">
+          <img src="./img/spray.png" alt="Pick up a weapon" id="enemyWeapon">
+          <img src="./img/chestEnemy.jpeg" id="enemyChest" alt="Switch weapon">
+      </div>
+      <button onclick="changeName(enemy, 'Puff', statsEnemy)">Change name</button>
+      <button onclick="attack(enemy, hero)">Attack!</button>
+      </div>
+  </div>
+  
+  </div>
+</div>
+
   <footer>
       <p>Made with ❤ at Codaisseur</p>
   </footer>
+
+
+
+
+
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
   <div id="mocha"></div>
@@ -38,4 +67,3 @@
 
 </body>
 </html>
-
