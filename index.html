@@ -4,19 +4,27 @@
     <title>Mocha Tests</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 </head>
 <body>
 
 
   <!-- YOUR HTML HERE -->
-  <img src="./img/hero.png" id="hero" alt="meow">
-  <img src="./img/box.jpg" id="inn" alt="">
-  <img src="./img/weapon.jpg" id="dagger" alt="">
-  <img src="./img/chest.jpg" id="bag" alt="">
-
-  <div id="stats"></div>
-
-
+  <div class="media">
+      <div class="image">
+        <img src="./img/hero.png" id="heroImg" alt="meow"></div>
+      <div class="text">
+          <div id="stats"></div>
+      <div id="heroImages">
+          <img src="./img/box.jpg" id="inn" alt="">
+          <img src="./img/weapon.jpg" id="dagger" alt="">
+          <img src="./img/chest.jpg" id="bag" alt="">
+      </div>
+      </div>
+  </div>
+  <footer>
+      <p>Made with ❤ at Codaisseur</p>
+  </footer>
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
   <div id="mocha"></div>

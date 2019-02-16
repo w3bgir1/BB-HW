@@ -1,3 +1,73 @@
-body img {
-    width: 200px;
+body {
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7em;
+    margin: 5em;
+}
+.media {
+    margin: 3em;
+    max-width: 40%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.media {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "img content";
+    margin-bottom: 1em;
+}
+
+.media .image {
+    grid-area: img;
+}
+
+.media .text {
+    padding: 10px;
+    
+}
+
+.image {
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+#heroImg {
+    max-width: 250px;
+}
+
+#stats {
+    margin: 1em;
+}
+
+
+.text img {
+    width: 30%;
+}
+
+.text {
+    max-width: 250px; 
+}
+
+button {
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+    border-radius: 3px;
+    outline: none;
+
 }
